@@ -18,3 +18,8 @@ body {
   --color-weak-border: #E9E9EA;
   --color-main: #AB0012;
 }
+
+.active{
+  @apply bg-main text-white;
+
+}

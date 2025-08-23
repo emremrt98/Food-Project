@@ -1,10 +1,30 @@
+'use client'
+
 import Image from 'next/image'
 import React from 'react'
 import { TbWorld, TbMenu2 } from "react-icons/tb";
 import { IoHelpBuoyOutline } from "react-icons/io5";
 import { FiPhone } from "react-icons/fi";
 import Link from 'next/link';
+import NavbarList from './NavbarList';
+
 export default function Header() {
+
+    const navigationUrl = [
+        {
+            title: "Ana Sayfa",
+            pathName: "/"
+        },
+        {
+            title: "Tariflerim",
+            pathName: "/tariflerim"
+        },
+        {
+            title: "Favorilerim",
+            pathName: "/favorilerim"
+        },
+    ]
+
     return (
         <div>
             <div className='flex items-center justify-end gap-3 border-b border-weak-border py-1'>
@@ -23,9 +43,11 @@ export default function Header() {
                 </figure>
                 <nav>
                     <ul className='flex items-center gap-3'>
-                        <Link href={"/"} className='px-4 text-white text-base font-medium py-3 rounded-full bg-main'>Ana Sayfa</Link>
-                        <Link href={"/tariflerim"} className='px-4 text-primary text-base font-medium py-3 rounded-full'>Tariflerim</Link>
-                        <Link href={"/favorilerim"} className='px-4 text-primary text-base font-medium py-3 rounded-full'>Favorilerim</Link>
+                        {
+                            navigationUrl.map((data,index) => (
+                                <NavbarList key={index} data={data} />
+                            ))
+                        }
                     </ul>
                 </nav>
                 <div className='flex gap-3 items-center'>

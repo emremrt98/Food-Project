@@ -9,7 +9,7 @@ export default function Menu() {
     const [isOpen, setIsOpen] = useState(false);
 
     const handleSetOpen = () => {
-        setIsOpen(!isOpen)
+        setIsOpen(!isOpen);
     }
     return (
         <>

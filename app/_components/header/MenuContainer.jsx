@@ -1,25 +1,10 @@
 'use client'
-import React, { useState, useRef, useEffect } from 'react'
+import useClickOutside from '@/app/_hooks/useClickOutside';
+import React, { useState, useRef } from 'react'
 
 export default function MenuContainer({ setIsOpen }) {
     const [isLogin, setIsLogin] = useState(false);
-    const menuRef = useRef(null);
-
-    useEffect(() => {
-        function handleClickOutside(event) {
-            if (menuRef.current && !menuRef.current.contains(event.target)) {
-                console.log("Selam")
-                setIsOpen(false);
-            }
-        }
-        
-        document.addEventListener("mousedown", handleClickOutside);
-
-        return () => {
-            document.removeEventListener("mousedown", handleClickOutside);
-        }
-    }, []);
-
+    const menuRef = useClickOutside(() => setIsOpen(false));
 
     return (
         <>

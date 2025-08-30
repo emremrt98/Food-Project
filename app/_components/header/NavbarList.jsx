@@ -7,8 +7,7 @@ import { usePathname } from 'next/navigation'
 
 export default function NavbarList({ data }) {
     const pathname = usePathname();
-    console.log("Pathname : ", pathname)
-    console.log("Data : ", data);
+
     return (
         <Link href={data.pathName} className={`px-4 text-primary text-base font-medium py-3 rounded-full ${pathname == data.pathName ? 'active' : ''}`}>{data.title}</Link>
     )

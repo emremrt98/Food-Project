@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
-import { TbWorld, TbMenu2 } from "react-icons/tb";
+import { TbWorld } from "react-icons/tb";
 import { IoHelpBuoyOutline } from "react-icons/io5";
 import { FiPhone } from "react-icons/fi";
 import Link from 'next/link';
 import Navbar from './Navbar';
+import Menu from './Menu';
 
 export default function Header() {
 
@@ -27,15 +28,12 @@ export default function Header() {
                 <nav>
                     <Navbar />
                 </nav>
-                <div className='flex gap-3 items-center'>
-                    <div className='px-4 py-3 flex gap-1'>
+                <div className='flex gap-3 items-center relative'>
+                    <div className='px-4 py-3 flex gap-1 hover:bg-gray-50 cursor-pointer rounded-full'>
                         <TbWorld size={24} className='text-primary' />
                         <span className='text-primary text-base font-medium'>Türkçe</span>
                     </div>
-                    <div className='px-4 py-3 flex gap-4 border rounded-full border-default-border'>
-                        <TbMenu2 size={24} className='text-primary' />
-                        <span className='text-primary text-base font-medium'>Giriş Yap</span>
-                    </div>
+                    <Menu />
                 </div>
             </div>
         </div>

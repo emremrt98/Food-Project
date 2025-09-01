@@ -13,7 +13,7 @@ export default function Title({ title, description, showMore = false }) {
                 &&
                 <div>
                     <Link href={'/'} className='flex items-center gap-2'>
-                        <span className='text-main text-base font-medium'>Tümünü Gör</span>
+                        <span className='text-main text-sm font-medium'>Tümünü Gör</span>
                         <IoIosArrowRoundForward size={16} className='text-main' />
                     </Link>
                 </div>

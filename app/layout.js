@@ -1,4 +1,5 @@
 import Container from "./_components/container/Container";
+import Footer from "./_components/footer/Footer";
 import Header from "./_components/header/Header";
 import "./globals.css";
 import { Inter } from 'next/font/google'
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
           <Header />
         </Container>
         {children}
+        <Footer />
       </body>
     </html >
   );

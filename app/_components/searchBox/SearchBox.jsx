@@ -3,9 +3,11 @@ import React, { useEffect, useState } from 'react'
 import Container from '../container/Container'
 import { GiKnifeFork } from "react-icons/gi";
 import { CgClose } from "react-icons/cg";
+import useClickOutside from '@/app/_hooks/useClickOutside';
 
 export default function SearchBox() {
     const [text, setText] = useState("");
+    const [show, setShow] = useState(false);
     const [datas, setDatas] = useState([]);
     const autocompleteDatas = [
         { label: "Hamburger", value: "Hamburger" },
@@ -108,14 +110,16 @@ export default function SearchBox() {
         { label: "Brownie", value: "Brownie" },
         { label: "Cheesecake", value: "Cheesecake" }
     ];
-
+    const autocompleteRef = useClickOutside(() => setShow(false));
 
     useEffect(() => {
         if (text.length >= 3) {
-            const result = autocompleteDatas.filter((autocompleteData) => autocompleteData.value.toLowerCase().includes(text))
+            const result = autocompleteDatas.filter((autocompleteData) => autocompleteData.value.toLowerCase().includes(text.toLowerCase()))
             setDatas(result);
+            setShow(true);
         } else {
             setDatas([]);
+            setShow(false);
         }
     }, [text])
 
@@ -132,7 +136,7 @@ export default function SearchBox() {
                         <p className='text-white text-base font-medium'>Ne yemek istiyorsunuz?</p>
                     </div>
                     <div className='bg-white rounded-[8px] p-4 flex justify-between items-center'>
-                        <div className='flex items-center gap-4 flex-1 relative'>
+                        <div ref={autocompleteRef} className='flex items-center gap-4 flex-1 relative'>
                             <div>
                                 <GiKnifeFork size={32} className='text-primary' />
                             </div>
@@ -141,7 +145,7 @@ export default function SearchBox() {
                                 <input onChange={setAutocompleteData} className='outline-none text-base text-primary font-medium placeholder:text-primary placeholder:text-base placeholder:font-medium' name='autocomplete' placeholder='Hamburger, pizza, kebap veya lahmacun arayın' value={text} type="text" />
                             </div>
                             {
-                                datas.length > 0 &&
+                                (datas.length && show) > 0 &&
                                 <ul className='bg-white shadow-xl rounded-[8px] w-full absolute min-h-[50px] max-h-[350px] overflow-y-auto top-[65px] left-12 border border-weak-border z-10'>
                                     {
                                         datas.map((data, index) => <li className='hover:bg-box cursor-pointer p-4 rounded-[8px]' key={index}>{data.label}</li>)

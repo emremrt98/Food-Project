@@ -3,7 +3,6 @@ import Link from 'next/link'
 import React from 'react'
 
 export default function CategoryItem({ data: { title, imageUrl, count, url } }) {
-    console.log(title)
     return (
         <Link href={url} className='flex flex-col items-center gap-3'>
 

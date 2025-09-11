@@ -19,7 +19,89 @@ body {
   --color-main: #AB0012;
 }
 
-.active{
+.active {
   @apply bg-main text-white;
+}
 
+.filter {
+  flex: 0 0 320px;
+}
+
+.filter__radio-btn span::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #757575;
+}
+
+.filter__radio-btn span::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  display: none;
+  border-radius: 50%;
+  background-color: #AB0012;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 4px;
+}
+
+.filter__radio-btn input[type='radio']:checked+span::before {
+  border-color: #AB0012;
+}
+
+.filter__radio-btn input[type='radio']:checked+span::after {
+  display: inline-block;
+}
+
+
+.filter__checkbox-btn,
+.filter__radio-btn {
+  cursor: pointer;
+}
+
+.filter__checkbox-btn span,
+.filter__radio-btn span {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+
+.filter__checkbox-btn span::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #757575;
+}
+
+.filter__checkbox-btn input[type='checkbox']:checked+span::before {
+  background-color: #AB0012;
+  border-color: #AB0012;
+}
+
+.filter__checkbox-btn input[type='checkbox']:checked+span svg {
+  display: inline-block;
+}
+
+.filter__checkbox-btn__icon {
+  position: absolute;
+  color: white;
+  display: none;
+  z-index: 99;
+  left: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.recipe-card {
+  flex: 1;
 }

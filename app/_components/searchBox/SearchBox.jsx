@@ -5,6 +5,7 @@ import { GiKnifeFork } from "react-icons/gi";
 import { CgClose } from "react-icons/cg";
 import useClickOutside from '@/app/_hooks/useClickOutside';
 import { useRouter } from 'next/navigation';
+import { ToastContainer, toast } from 'react-toastify';
 
 export default function SearchBox() {
     const router = useRouter()
@@ -149,11 +150,17 @@ export default function SearchBox() {
 
     const handleSearch = () => {
         console.log("Value : ",);
-        router.push(`/search/?query=${selectedVal}`)
+        if (selectedVal != "" && selectedVal != null) {
+            router.push(`/search/${selectedVal}`)
+        } else {
+            toast.error('Search atabilmek için gerekli bilgileri doldur');
+        }
+
     }
 
     return (
         <div className='bg-[url(/search-bg.svg)] relative h-[375px] w-full bg-no-repeat bg-cover before:content-[""] before:absolute before:inset-0 before:bg-black/50'>
+            <ToastContainer />
             <Container>
                 <div className='relative flex flex-col justify-center gap-6 h-full'>
                     <div>

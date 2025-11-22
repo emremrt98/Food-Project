@@ -34,32 +34,28 @@ export default function Filter() {
                         <HiOutlineChevronDown size={24} className='text-primary' />
                     </div>
                     <div className='flex flex-col gap-2 mt-4'>
-                        <label className='filter__checkbox-btn'>
-                            <input type="checkbox" hidden />
+                        <label className='filter__radio-btn'>
+                            <input type="radio" hidden name='point-radio-btn' />
                             <span>
                                 9 ve üzeri
-                                <FaCheck size={13} className='filter__checkbox-btn__icon' />
                             </span>
                         </label>
-                        <label className='filter__checkbox-btn'>
-                            <input type="checkbox" hidden />
+                        <label className='filter__radio-btn'>
+                            <input type="radio" hidden name='point-radio-btn' />
                             <span>
                                 8 ve üzeri
-                                <FaCheck size={13} className='filter__checkbox-btn__icon' />
                             </span>
                         </label>
-                        <label className='filter__checkbox-btn'>
-                            <input type="checkbox" hidden />
+                        <label className='filter__radio-btn'>
+                            <input type="radio" hidden name='point-radio-btn' />
                             <span>
                                 7 ve üzeri
-                                <FaCheck size={13} className='filter__checkbox-btn__icon' />
                             </span>
                         </label>
-                        <label className='filter__checkbox-btn'>
-                            <input type="checkbox" hidden />
+                        <label className='filter__radio-btn'>
+                            <input type="radio" hidden name='point-radio-btn' />
                             <span>
                                 6 ve üzeri
-                                <FaCheck size={13} className='filter__checkbox-btn__icon' />
                             </span>
                         </label>
                     </div>
@@ -101,6 +97,14 @@ export default function Filter() {
                             </span>
                         </label>
                     </div>
+                </div>
+            </div>
+            <div className='flex gap-4'>
+                <div className='flex-1'>
+                    <button className='w-full border border-main text-main text-base font-medium px-4 py-3 rounded-[8px]'>Temizle</button>
+                </div>
+                <div className='flex-1'>
+                    <button className='w-full border border-main text-white bg-main text-base font-medium px-4 py-3 rounded-[8px]'>Uygula</button>
                 </div>
             </div>
         </div>

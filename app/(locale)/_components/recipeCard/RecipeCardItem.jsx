@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 
 
-export default function RecipeCardItem({ data: { imageUrl, tinyImageData, surveyScore, title, description, categories, bookMarkCount, readCount, url } }) {
+export default function RecipeCardItem({ data: { imageUrl, surveyScore, title, description, categories, bookMarkCount, readCount, url } }) {
     const [surveyScoreText, setSurveyScoreText] = useState("");
     useEffect(() => {
         if (surveyScore > 9) {
@@ -23,22 +23,10 @@ export default function RecipeCardItem({ data: { imageUrl, tinyImageData, survey
     return (
         <li className='border border-default-border rounded-[8px]'>
             <div className='flex gap-4'>
-                <div className='flex gap-[1px]'>
-                    <div>
-                        <figure>
-                            <Image src={imageUrl} width={150} height={200} alt={title} />
-                        </figure>
-                    </div>
-                    <div>
-                        <figure className='flex flex-col gap-[1px]'>
-
-                            {
-                                tinyImageData.map((tinyImage, index) => (
-                                    <Image key={index} src={tinyImage.imageUrl} width={150} height={200} alt={tinyImage.imageTitle} />
-                                ))
-                            }
-                        </figure>
-                    </div>
+                <div>
+                    <figure>
+                        <Image src={imageUrl} width={300} height={400} alt={title} className='object-cover rounded-l-[8px]' />
+                    </figure>
                 </div>
                 <div className='py-4 pr-4'>
                     {

@@ -1,0 +1,183 @@
+{
+  "nav": {
+    "home": "Home",
+    "myRecipes": "My Recipes",
+    "favorites": "Favorites"
+  },
+  "header": {
+    "support": "Get Support",
+    "contact": "Contact",
+    "login": "Login",
+    "register": "Register",
+    "menu": "Menu",
+    "profile": "Profile",
+    "recipeBook": "Recipe Book",
+    "logout": "Logout"
+  },
+  "login": {
+    "title": "Login",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot Password",
+    "submit": "Login",
+    "noAccount": "Don't have an account?",
+    "registerLink": "Register",
+    "error": "Email or password is incorrect!"
+  },
+  "register": {
+    "title": "Register",
+    "name": "Full Name",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "terms": "I have read and accept the Terms of Use and Privacy Policy.",
+    "submit": "Register",
+    "hasAccount": "Already have an account?",
+    "loginLink": "Login",
+    "passwordMismatch": "Passwords do not match!"
+  },
+  "recipe": {
+    "overview": "Overview",
+    "tips": "Tips",
+    "importantInfo": "Important Info",
+    "ingredients": "Ingredients",
+    "instructions": "Instructions",
+    "servingSuggestions": "Serving Suggestions",
+    "seeMore": "See More",
+    "viewCount": "View Count",
+    "revenuePerView": "Revenue per view:",
+    "averageRevenue": "Average Revenue"
+  },
+  "searchBox": {
+    "title": "Find delicious recipes with Foody!",
+    "subtitle": "What would you like to eat?",
+    "placeholder": "Search for hamburger, pizza, kebab or lahmacun",
+    "inputLabel": "What would you like to eat?",
+    "button": "List Recipes",
+    "recentSearches": "Recent Searches",
+    "searchError": "Please fill in the required information to search"
+  },
+  "categories": {
+    "title": "Most Popular",
+    "description": "Most preferred categories"
+  },
+  "recipeCard": {
+    "title": "Featured",
+    "description": "Most preferred recipe dishes"
+  },
+  "blogs": {
+    "title": "Food Blogs",
+    "description": "Advance your food culture by reading blogs",
+    "detailButton": "Learn More"
+  },
+  "ads": {
+    "specialOffer": "Special Offer",
+    "premiumMembership": "Premium Membership with",
+    "unlimitedRecipes": "Unlimited Recipe Access!",
+    "description": "Access thousands of exclusive recipes, video tutorials and professional cooking tips. 50% off first month!",
+    "startButton": "Get Started",
+    "discount": "Discount",
+    "unlimitedRecipesLabel": "Unlimited\nRecipes",
+    "premiumContent": "Premium\nContent"
+  },
+  "banner": {
+    "title": "Foody Mobile App",
+    "subtitle": "Now in your pocket!",
+    "description": "Easily save recipes, create shopping lists and get step-by-step guidance in the kitchen.",
+    "offlineMode": "Offline mode",
+    "offlineDescription": "use without internet!",
+    "downloadOnAppStore": "Download on the",
+    "getItOnGooglePlay": "GET IT ON",
+    "qrCode": "Download quickly with QR code"
+  },
+  "filter": {
+    "title": "Filters",
+    "clear": "Clear",
+    "sortBy": "Sort By",
+    "sortTitle": "Sort",
+    "popular": "Popular recipes",
+    "new": "New recipes",
+    "scoreTitle": "Recipe Score",
+    "minScore": "Minimum Score",
+    "scoreAndAbove": "and above",
+    "servings": "Servings",
+    "servingsTitle": "Servings",
+    "servings1-2": "1-2 servings",
+    "servings2-4": "2-4 servings",
+    "servings4-6": "4-6 servings",
+    "servings6-8": "6-8 servings",
+    "apply": "Apply"
+  },
+  "common": {
+    "seeAll": "See All"
+  },
+  "footer": {
+    "categories": "Categories",
+    "all": "All",
+    "desserts": "Desserts",
+    "pastries": "Pastries",
+    "meatDishes": "Meat Dishes",
+    "vegetableDishes": "Vegetable Dishes",
+    "soup": "Soup",
+    "beverages": "Beverages",
+    "pasta": "Pasta",
+    "corporate": "Corporate",
+    "aboutUs": "About Us",
+    "membershipAgreement": "Membership Agreement",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms of Use",
+    "cookiePolicy": "Cookie Policy",
+    "support": "Support",
+    "contact": "Contact",
+    "faq": "Frequently Asked Questions",
+    "socialMedia": "Contact",
+    "copyright": "© 2025, All Rights Reserved by Yemek Tarifim."
+  },
+  "pages": {
+    "favorites": {
+      "title": "My Favorites",
+      "description": "Your saved recipes"
+    },
+    "myRecipes": {
+      "title": "My Recipes",
+      "description": "Your created recipes"
+    },
+    "profile": {
+      "fanInfo": "Fan Information",
+      "followers": "Followers",
+      "following": "Following",
+      "people": "people",
+      "recipeBook": "Recipe Book",
+      "recipesInBook": "Recipes Added to Book",
+      "items": "items",
+      "submittedRecipes": "Submitted Recipes",
+      "published": "Published",
+      "unpublished": "Unpublished",
+      "personalInfo": "My Personal Information",
+      "fullName": "Full Name",
+      "email": "Email Address",
+      "authorProfileName": "Author Profile Name",
+      "city": "City",
+      "gender": "Gender",
+      "birthDate": "Date of Birth",
+      "editProfile": "Edit Profile",
+      "editPersonalInfo": "Edit Personal Information",
+      "name": "Name",
+      "surname": "Surname",
+      "day": "Day",
+      "month": "Month",
+      "year": "Year",
+      "save": "Save",
+      "feedbackTitle": "Your Feedback is Valuable to Us",
+      "feedbackDescription": "The application values user comments greatly and evaluates feedback for continuous improvement. It focuses on active feedback to maximize user satisfaction.",
+      "reportBug": "Report Bug",
+      "giveFeedback": "Give Feedback"
+    }
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "Sorry, the page you are looking for does not exist. You may have followed a broken link or the page may have been moved.",
+    "backHome": "Back to Home",
+    "searchRecipes": "Search Recipes"
+  }
+}

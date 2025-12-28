@@ -1,6 +1,4 @@
-import Container from "./_components/container/Container";
-import Footer from "./_components/footer/Footer";
-import Header from "./_components/header/Header";
+import ClientLayout from "./_components/layout/ClientLayout";
 import "./globals.css";
 import { Inter } from 'next/font/google'
 
@@ -20,11 +18,9 @@ export default function RootLayout({ children }) {
   return (
     <html className={`${inter.className} antialiased`} lang="en">
       <body >
-        <Container>
-          <Header />
-        </Container>
-        {children}
-        <Footer />
+        <ClientLayout>
+          {children}
+        </ClientLayout>
       </body>
     </html >
   );

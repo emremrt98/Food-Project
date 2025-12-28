@@ -4,8 +4,10 @@ import React from 'react'
 import { HiOutlineChevronRight } from "react-icons/hi";
 import Filter from '../_components/filter/Filter';
 import RecipeCard from '@/app/(locale)/search/_components/recipeCard/RecipeCard'
-export default async function Search({ params }) {
+
+export default async function Search({ params, searchParams }) {
     const { slug } = await params
+    
     return (
         <>
             <SearchBox />
@@ -17,9 +19,9 @@ export default async function Search({ params }) {
                 </div>
 
                 <div className='mt-6 flex gap-8'>
-                    <Filter />
+                    <Filter slug={slug} />
                     <div className='recipe-card'>
-                        <RecipeCard />
+                        <RecipeCard slug={slug} />
                     </div>
                 </div>
 

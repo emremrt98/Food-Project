@@ -92,6 +92,15 @@ body {
   display: inline-block;
 }
 
+.filter__checkbox-btn--checked span::before {
+  background-color: #AB0012 !important;
+  border-color: #AB0012 !important;
+}
+
+.filter__checkbox-btn--checked .filter__checkbox-btn__icon {
+  display: inline-block !important;
+}
+
 .filter__checkbox-btn__icon {
   position: absolute;
   color: white;

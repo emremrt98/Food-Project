@@ -1,19 +1,22 @@
+'use client'
 import React from 'react'
 import NavbarList from './NavbarList';
+import { useTranslation } from '@/app/_hooks/useTranslation';
 
 export default function Navbar() {
+    const { t } = useTranslation();
 
     const navigationUrl = [
         {
-            title: "Ana Sayfa",
+            titleKey: "nav.home",
             pathName: "/"
         },
         {
-            title: "Tariflerim",
+            titleKey: "nav.myRecipes",
             pathName: "/tariflerim"
         },
         {
-            title: "Favorilerim",
+            titleKey: "nav.favorites",
             pathName: "/favorilerim"
         }
     ];
@@ -23,7 +26,7 @@ export default function Navbar() {
         <ul className='flex items-center gap-3'>
             {
                 navigationUrl.map((data, index) => (
-                    <NavbarList key={index} data={data} />
+                    <NavbarList key={index} data={{ ...data, title: t(data.titleKey) }} />
                 ))
             }
         </ul>

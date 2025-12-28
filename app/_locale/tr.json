@@ -1,0 +1,183 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "myRecipes": "Tariflerim",
+    "favorites": "Favorilerim"
+  },
+  "header": {
+    "support": "Destek Al",
+    "contact": "İletişim",
+    "login": "Giriş Yap",
+    "register": "Kayıt Ol",
+    "menu": "Menü",
+    "profile": "Profil",
+    "recipeBook": "Tarif Defteri",
+    "logout": "Oturumu Kapat"
+  },
+  "login": {
+    "title": "Giriş Yap",
+    "email": "E-posta",
+    "password": "Şifre",
+    "forgotPassword": "Şifremi Unuttum",
+    "submit": "Giriş Yap",
+    "noAccount": "Hesabınız yok mu?",
+    "registerLink": "Kayıt Ol",
+    "error": "E-posta veya şifre hatalı!"
+  },
+  "register": {
+    "title": "Kayıt Ol",
+    "name": "Ad Soyad",
+    "email": "E-posta",
+    "password": "Şifre",
+    "confirmPassword": "Şifre Tekrar",
+    "terms": "Kullanım Şartları ve Gizlilik Politikası'nı okudum ve kabul ediyorum.",
+    "submit": "Kayıt Ol",
+    "hasAccount": "Zaten hesabınız var mı?",
+    "loginLink": "Giriş Yap",
+    "passwordMismatch": "Şifreler eşleşmiyor!"
+  },
+  "recipe": {
+    "overview": "Genel Bakış",
+    "tips": "Püf Noktalar",
+    "importantInfo": "Önemli Bilgiler",
+    "ingredients": "Malzemeler",
+    "instructions": "Yapılışı",
+    "servingSuggestions": "Servis Önerisi",
+    "seeMore": "Devamını Gör",
+    "viewCount": "İzlenme Sayısı",
+    "revenuePerView": "İzlenme başına kazanç:",
+    "averageRevenue": "Ortalama Gelir"
+  },
+  "searchBox": {
+    "title": "Foody ile lezzetli tarifleri bulun!",
+    "subtitle": "Ne yemek istiyorsunuz?",
+    "placeholder": "Hamburger, pizza, kebap veya lahmacun arayın",
+    "inputLabel": "Ne yemek istiyorsun?",
+    "button": "Yemekleri Listele",
+    "recentSearches": "Son Aramalar",
+    "searchError": "Search atabilmek için gerekli bilgileri doldur"
+  },
+  "categories": {
+    "title": "En çok tercih edilenler",
+    "description": "En çok tercih edilen kategoriler"
+  },
+  "recipeCard": {
+    "title": "Öne çıkanlar",
+    "description": "En çok tercih edilen yemek tarifleri"
+  },
+  "blogs": {
+    "title": "Yemek blogları",
+    "description": "Blogları okuyarak yemek kültürünüzü ilerletin",
+    "detailButton": "Detaylı Bilgi"
+  },
+  "ads": {
+    "specialOffer": "Özel Fırsat",
+    "premiumMembership": "Premium Üyelik ile",
+    "unlimitedRecipes": "Sınırsız Tarif Erişimi!",
+    "description": "Binlerce özel tarif, video anlatımlar ve profesyonel mutfak ipuçlarına erişin. İlk ay %50 indirim!",
+    "startButton": "Hemen Başla",
+    "discount": "İndirim",
+    "unlimitedRecipesLabel": "Sınırsız\nTarif",
+    "premiumContent": "Premium\nİçerik"
+  },
+  "banner": {
+    "title": "Foody Mobil Uygulaması",
+    "subtitle": "Artık cebinizde!",
+    "description": "Tarifleri kolayca kaydedin, alışveriş listesi oluşturun ve mutfakta adım adım rehberlik alın.",
+    "offlineMode": "Offline mod",
+    "offlineDescription": "ile internet olmadan da kullanın!",
+    "downloadOnAppStore": "Download on the",
+    "getItOnGooglePlay": "GET IT ON",
+    "qrCode": "QR kod ile hızlı indir"
+  },
+  "filter": {
+    "title": "Filtreler",
+    "clear": "Temizle",
+    "sortBy": "Sırala",
+    "sortTitle": "Sıralama",
+    "popular": "Popüler tarifler",
+    "new": "Yeni tarifler",
+    "scoreTitle": "Yemek Puanı",
+    "minScore": "Minimum Puan",
+    "scoreAndAbove": "ve üzeri",
+    "servings": "Kaç Kişilik",
+    "servingsTitle": "Kaç Kişilik",
+    "servings1-2": "1-2 kişilik",
+    "servings2-4": "2-4 kişilik",
+    "servings4-6": "4-6 kişilik",
+    "servings6-8": "6-8 kişilik",
+    "apply": "Uygula"
+  },
+  "common": {
+    "seeAll": "Tümünü Gör"
+  },
+  "footer": {
+    "categories": "Kategoriler",
+    "all": "Tümü",
+    "desserts": "Tatlılar",
+    "pastries": "Hamur İşleri",
+    "meatDishes": "Et Yemekleri",
+    "vegetableDishes": "Sebze Yemekleri",
+    "soup": "Çorba",
+    "beverages": "İçecekler",
+    "pasta": "Makarnalar",
+    "corporate": "Kurumsal",
+    "aboutUs": "Hakkımızda",
+    "membershipAgreement": "Üyelik Sözleşmesi",
+    "privacyPolicy": "Aydınlatma Metni",
+    "termsOfUse": "Kullanım Koşulları",
+    "cookiePolicy": "Çerez Politikası",
+    "support": "Destek",
+    "contact": "İletişim",
+    "faq": "Sıkça Sorulan Sorular",
+    "socialMedia": "İletişim",
+    "copyright": "© 2025, Tüm Hakları Yemek Tarifim tarafından saklıdır."
+  },
+  "pages": {
+    "favorites": {
+      "title": "Favorilerim",
+      "description": "Kaydettiğiniz tarifler"
+    },
+    "myRecipes": {
+      "title": "Tariflerim",
+      "description": "Oluşturduğunuz tarifler"
+    },
+    "profile": {
+      "fanInfo": "Fan Bilgileri",
+      "followers": "Takipçiler",
+      "following": "Takip edilenler",
+      "people": "kişi",
+      "recipeBook": "Tarif Defteri",
+      "recipesInBook": "Deftere Eklenen Tarifler",
+      "items": "adet",
+      "submittedRecipes": "Gönderilen Tarifler",
+      "published": "Yayındakiler",
+      "unpublished": "Yayında Olmayanlar",
+      "personalInfo": "Kişisel Bilgilerim",
+      "fullName": "Ad Soyad",
+      "email": "E-mail Adresi",
+      "authorProfileName": "Yazar Profil Adı",
+      "city": "Şehir",
+      "gender": "Cinsiyet",
+      "birthDate": "Doğum Tarihi",
+      "editProfile": "Profili Düzenle",
+      "editPersonalInfo": "Kişisel Bilgileri Düzenle",
+      "name": "Ad",
+      "surname": "Soyad",
+      "day": "Gün",
+      "month": "Ay",
+      "year": "Yıl",
+      "save": "Kaydet",
+      "feedbackTitle": "Görüşleriniz Bizim İçin Değerli",
+      "feedbackDescription": "Uygulama, kullanıcı yorumlarına büyük önem vererek sürekli gelişim için geri bildirimi değerlendiriyor. Kullanıcı memnuniyetini en üst düzeye çıkarmak için aktif bir şekilde geri dönüşlere odaklanıyor.",
+      "reportBug": "Hata Bildir",
+      "giveFeedback": "Görüş Bildir"
+    }
+  },
+  "notFound": {
+    "title": "Sayfa Bulunamadı",
+    "description": "Üzgünüz, aradığınız sayfa mevcut değil. Belki yanlış bir bağlantı takip ettiniz veya sayfa taşınmış olabilir.",
+    "backHome": "Ana Sayfaya Dön",
+    "searchRecipes": "Tarif Ara"
+  }
+}

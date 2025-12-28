@@ -1,0 +1,147 @@
+export const recipesData = [
+    {
+        imageUrl: "/dummy/tavuk.gif",
+        surveyScore: 9.2,
+        title: "Tavuklu Kaşarlı Alfredo",
+        description: "Sizlere enfes bir tarif ile birlikte geldim. Bugün ki menümüzde Tavuklu Kaşarlı Alfredo var. Çok az malzeme ile tüm yemeği kusursuz bir hale getirebilirsiniz",
+        categories: ["Türk yemekleri", "Tavuk", "Akşam yemeği"],
+        bookMarkCount: 375,
+        readCount: 1100,
+        url: "/search/tavuk/tavuklu-kasarli-alfredo",
+        servings: "4-6",
+        createdAt: "2024-01-15"
+    },
+    {
+        imageUrl: "/dummy/hamburger.svg",
+        surveyScore: 8.5,
+        title: "Klasik Hamburger",
+        description: "Enfes bir hamburger tarifi. Evde kolayca yapabileceğiniz, lezzetli ve doyurucu bir tarif. Tüm ailenizin seveceği bir yemek.",
+        categories: ["Fast food", "Hamburger", "Öğle yemeği"],
+        bookMarkCount: 542,
+        readCount: 1850,
+        url: "/search/hamburger/klasik-hamburger",
+        servings: "2-4",
+        createdAt: "2024-01-10"
+    },
+    {
+        imageUrl: "/dummy/pizza.jpg",
+        surveyScore: 7.8,
+        title: "Mantarlı Pizza",
+        description: "Taze mantarlar ve mozzarella peyniri ile hazırlanan nefis bir pizza tarifi. Pizza severlerin favorisi olacak.",
+        categories: ["İtalyan", "Pizza", "Akşam yemeği"],
+        bookMarkCount: 289,
+        readCount: 920,
+        url: "/search/pizza/mantarli-pizza",
+        servings: "4-6",
+        createdAt: "2024-01-08"
+    },
+    {
+        imageUrl: "/dummy/döner.jpg",
+        surveyScore: 8.9,
+        title: "Izgara Döner",
+        description: "Geleneksel Türk lezzeti. Evde kolayca yapabileceğiniz, misafirlerinize sunabileceğiniz harika bir tarif.",
+        categories: ["Türk yemekleri", "Döner", "Akşam yemeği"],
+        bookMarkCount: 456,
+        readCount: 1320,
+        url: "/search/doner/izgara-doner",
+        servings: "6-8",
+        createdAt: "2024-01-12"
+    },
+    {
+        imageUrl: "/dummy/salata.jpg",
+        surveyScore: 6.5,
+        title: "Sezar Salata",
+        description: "Sağlıklı ve lezzetli bir salata tarifi. Öğle yemekleri için mükemmel bir seçenek.",
+        categories: ["Salata", "Sağlıklı", "Öğle yemeği"],
+        bookMarkCount: 198,
+        readCount: 650,
+        url: "/search/salata/sezar-salata",
+        servings: "1-2",
+        createdAt: "2024-01-20"
+    },
+    {
+        imageUrl: "/dummy/baklava.jpg",
+        surveyScore: 9.5,
+        title: "Baklava",
+        description: "Geleneksel Türk tatlısı. Evde yapılan baklava, dışarıdan alınanlardan çok daha lezzetli olur.",
+        categories: ["Tatlı", "Türk yemekleri", "Özel günler"],
+        bookMarkCount: 623,
+        readCount: 2100,
+        url: "/search/tatli/baklava",
+        servings: "6-8",
+        createdAt: "2024-01-05"
+    },
+    {
+        imageUrl: "/dummy/tavuk.gif",
+        surveyScore: 8.3,
+        title: "Tavuk Şiş",
+        description: "Marine edilmiş tavuk parçalarının şişte pişirilmesiyle hazırlanan nefis bir tarif. Mangal keyfi için mükemmel.",
+        categories: ["Türk yemekleri", "Tavuk", "Akşam yemeği"],
+        bookMarkCount: 312,
+        readCount: 980,
+        url: "/search/tavuk/tavuk-sis",
+        servings: "2-4",
+        createdAt: "2024-01-18"
+    },
+    {
+        imageUrl: "/dummy/hamburger2.svg",
+        surveyScore: 8.0,
+        title: "Cheeseburger",
+        description: "Klasik hamburgerin peynirli versiyonu. Cheddar peyniri ile daha da lezzetli hale geliyor.",
+        categories: ["Fast food", "Hamburger", "Öğle yemeği"],
+        bookMarkCount: 421,
+        readCount: 1450,
+        url: "/search/hamburger/cheeseburger",
+        servings: "1-2",
+        createdAt: "2024-01-22"
+    },
+    {
+        imageUrl: "/dummy/pizza.jpg",
+        surveyScore: 8.2,
+        title: "Margherita Pizza",
+        description: "Klasik İtalyan lezzeti. Domates, mozzarella ve fesleğen ile hazırlanan nefis bir pizza.",
+        categories: ["İtalyan", "Pizza", "Akşam yemeği"],
+        bookMarkCount: 356,
+        readCount: 1120,
+        url: "/search/pizza/margherita-pizza",
+        servings: "2-4",
+        createdAt: "2024-01-25"
+    },
+    {
+        imageUrl: "/dummy/döner.jpg",
+        surveyScore: 8.7,
+        title: "Tavuk Döner",
+        description: "Tavuk etinden yapılan döner. Hafif ve lezzetli bir seçenek.",
+        categories: ["Türk yemekleri", "Döner", "Tavuk", "Akşam yemeği"],
+        bookMarkCount: 389,
+        readCount: 1080,
+        url: "/search/doner/tavuk-doner",
+        servings: "4-6",
+        createdAt: "2024-01-14"
+    },
+    {
+        imageUrl: "/dummy/salata.jpg",
+        surveyScore: 7.0,
+        title: "Akdeniz Salatası",
+        description: "Taze sebzeler ve zeytinyağı ile hazırlanan sağlıklı bir salata. Akdeniz mutfağının vazgeçilmezi.",
+        categories: ["Salata", "Sağlıklı", "Öğle yemeği"],
+        bookMarkCount: 245,
+        readCount: 780,
+        url: "/search/salata/akdeniz-salatasi",
+        servings: "2-4",
+        createdAt: "2024-01-19"
+    },
+    {
+        imageUrl: "/dummy/baklava.jpg",
+        surveyScore: 9.0,
+        title: "Cevizli Baklava",
+        description: "Geleneksel baklavanın cevizli versiyonu. Her dilimde ayrı bir lezzet.",
+        categories: ["Tatlı", "Türk yemekleri", "Özel günler"],
+        bookMarkCount: 512,
+        readCount: 1890,
+        url: "/search/tatli/cevizli-baklava",
+        servings: "6-8",
+        createdAt: "2024-01-07"
+    }
+];
+

@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Container from '../container/Container'
 import { IoMail } from "react-icons/io5";
@@ -6,7 +7,10 @@ import { ImLinkedin } from "react-icons/im";
 import { AiFillInstagram } from "react-icons/ai";
 import { PiYoutubeLogoFill } from "react-icons/pi";
 import { RiTwitterXLine } from "react-icons/ri";
+import { useTranslation } from '@/app/_hooks/useTranslation';
+
 export default function Footer() {
+  const { t } = useTranslation();
   return (
     <div className='bg-main w-full h-[450px] mt-[100px]'>
       <Container>
@@ -14,32 +18,32 @@ export default function Footer() {
           <div className='text-white text-2xl font-medium'>Foody</div>
           <div className='mt-4 flex justify-between'>
             <div className='flex flex-col gap-2'>
-              <div className='text-base text-white font-medium'>Kategoriler</div>
-              <div className='text-base text-white font-normal'>Tümü</div>
-              <div className='text-base text-white font-normal'>Tatlılar</div>
-              <div className='text-base text-white font-normal'>Hamur İşleri</div>
-              <div className='text-base text-white font-normal'>Et Yemekleri</div>
-              <div className='text-base text-white font-normal'>Sebze Yemekleri</div>
-              <div className='text-base text-white font-normal'>Çorba</div>
-              <div className='text-base text-white font-normal'>İçecekler</div>
-              <div className='text-base text-white font-normal'>Makarnalar</div>
+              <div className='text-base text-white font-medium'>{t('footer.categories')}</div>
+              <div className='text-base text-white font-normal'>{t('footer.all')}</div>
+              <div className='text-base text-white font-normal'>{t('footer.desserts')}</div>
+              <div className='text-base text-white font-normal'>{t('footer.pastries')}</div>
+              <div className='text-base text-white font-normal'>{t('footer.meatDishes')}</div>
+              <div className='text-base text-white font-normal'>{t('footer.vegetableDishes')}</div>
+              <div className='text-base text-white font-normal'>{t('footer.soup')}</div>
+              <div className='text-base text-white font-normal'>{t('footer.beverages')}</div>
+              <div className='text-base text-white font-normal'>{t('footer.pasta')}</div>
             </div>
             <div className='flex flex-col gap-2'>
-              <div className='text-base text-white font-medium'>Kurumsal</div>
-              <div className='text-base text-white font-normal'>Hakkımızda</div>
-              <div className='text-base text-white font-normal'>Üyelik Sözleşmesi</div>
-              <div className='text-base text-white font-normal'>Aydınlatma Metni</div>
-              <div className='text-base text-white font-normal'>Kullanım Koşulları</div>
-              <div className='text-base text-white font-normal'>Çerez Politikası</div>
+              <div className='text-base text-white font-medium'>{t('footer.corporate')}</div>
+              <div className='text-base text-white font-normal'>{t('footer.aboutUs')}</div>
+              <div className='text-base text-white font-normal'>{t('footer.membershipAgreement')}</div>
+              <div className='text-base text-white font-normal'>{t('footer.privacyPolicy')}</div>
+              <div className='text-base text-white font-normal'>{t('footer.termsOfUse')}</div>
+              <div className='text-base text-white font-normal'>{t('footer.cookiePolicy')}</div>
             </div>
             <div className='flex flex-col gap-2'>
-              <div className='text-base text-white font-medium'>Destek</div>
-              <div className='text-base text-white font-normal'>İletişim</div>
-              <div className='text-base text-white font-normal'>Sıkça Sorulan Sorular</div>
+              <div className='text-base text-white font-medium'>{t('footer.support')}</div>
+              <div className='text-base text-white font-normal'>{t('footer.contact')}</div>
+              <div className='text-base text-white font-normal'>{t('footer.faq')}</div>
             </div>
             <div className='flex flex-col gap-8'>
               <div className='flex flex-col gap-2'>
-                <div className='text-base text-white font-medium'>İletişim</div>
+                <div className='text-base text-white font-medium'>{t('footer.socialMedia')}</div>
                 <div className='text-base text-white font-normal flex gap-2 items-center'>
                   <FaPhoneAlt size={24} className='text-white' />
                   <span>0212 909 89 91</span>
@@ -61,7 +65,7 @@ export default function Footer() {
             </div>
           </div>
           <div className='border-t border-white mt-8'>
-            <div className='text-white text-sm text-center mt-4'>© 2025, Tüm Hakları Yemek Tarifim tarafından saklıdır.</div>
+            <div className='text-white text-sm text-center mt-4'>{t('footer.copyright')}</div>
           </div>
         </div>
       </Container>
